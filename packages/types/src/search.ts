@@ -16,13 +16,7 @@ export type SearchScope = "compact" | "full"
 /**
  * Search match reason
  */
-export type SearchMatchReason =
-  | "title"
-  | "description"
-  | "content"
-  | "url"
-  | "tag"
-  | "semantic"
+export type SearchMatchReason = "title" | "description" | "content" | "url" | "tag" | "semantic"
 
 /**
  * Search result item

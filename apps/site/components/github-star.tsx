@@ -18,7 +18,7 @@ export function GitHubStar() {
   return (
     <div className="flex items-center gap-1.5">
       <Star className="size-4" />
-      <span>{typeof stars === 'number' ? stars.toLocaleString() : "..."}</span>
+      <span>{typeof stars === "number" ? stars.toLocaleString() : "..."}</span>
     </div>
   )
 }

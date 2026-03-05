@@ -29,9 +29,9 @@ export default function Testimonials() {
             </CardContent>
           </Card>
 
-          <TestimonialCard text={items[1].text} name={items[1].name} role={items[1].role} />
-          <TestimonialCard text={items[2].text} name={items[2].name} role={items[2].role} />
-          <TestimonialCard text={items[3].text} name={items[3].name} role={items[3].role} />
+          <TestimonialCard name={items[1].name} role={items[1].role} text={items[1].text} />
+          <TestimonialCard name={items[2].name} role={items[2].role} text={items[2].text} />
+          <TestimonialCard name={items[3].name} role={items[3].role} text={items[3].text} />
         </div>
       </div>
     </section>

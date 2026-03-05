@@ -15,7 +15,7 @@ export default function StatsSection() {
 
         <div className="grid gap-12 divide-y *:text-center md:grid-cols-3 md:gap-2 md:divide-x md:divide-y-0">
           {t.stats.items.map((item) => (
-            <div key={item.label} className="space-y-4">
+            <div className="space-y-4" key={item.label}>
               <div className="text-5xl font-bold">{item.value}</div>
               <p>{item.label}</p>
             </div>

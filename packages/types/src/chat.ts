@@ -21,9 +21,7 @@ export type MessageRole = "user" | "assistant" | "system"
 /**
  * Message part types
  */
-export type MessagePart =
-  | { type: "text"; text: string }
-  | { type: "image"; image: string }
+export type MessagePart = { type: "text"; text: string } | { type: "image"; image: string }
 
 /**
  * Message attachment

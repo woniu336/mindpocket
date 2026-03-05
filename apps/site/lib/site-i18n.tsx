@@ -66,12 +66,9 @@ const dictionaries = {
     },
     content: {
       title: "不仅是收藏夹，更是你的个人知识库",
-      paragraph1:
-        "MindPocket 会对收藏内容做结构化整理，按文件夹和标签自动归类，降低信息堆积。",
-      paragraph2:
-        "结合 AI Agent 与向量检索，你可以直接提问历史收藏内容，快速得到可执行答案。",
-      quote:
-        "以前收藏越多越难找，现在是越用越顺手。尤其是自动摘要和标签，真的省下很多整理时间。",
+      paragraph1: "MindPocket 会对收藏内容做结构化整理，按文件夹和标签自动归类，降低信息堆积。",
+      paragraph2: "结合 AI Agent 与向量检索，你可以直接提问历史收藏内容，快速得到可执行答案。",
+      quote: "以前收藏越多越难找，现在是越用越顺手。尤其是自动摘要和标签，真的省下很多整理时间。",
       author: "早期用户反馈",
       authorRole: "独立开发者",
     },
@@ -157,7 +154,8 @@ const dictionaries = {
     },
     features: {
       title: "Built for Personal Knowledge Capture",
-      subtitle: "From collection and organization to AI retrieval, one workflow for your bookmarks.",
+      subtitle:
+        "From collection and organization to AI retrieval, one workflow for your bookmarks.",
       items: [
         {
           title: "Zero-Cost Deploy",

@@ -1,9 +1,9 @@
 "use client"
 
+import { Settings2, Sparkles, Zap } from "lucide-react"
+import type { ReactNode } from "react"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { useSiteI18n } from "@/lib/site-i18n"
-import { Settings2, Sparkles, Zap } from "lucide-react"
-import { ReactNode } from "react"
 
 export default function Features() {
   const { t } = useSiteI18n()
@@ -20,10 +20,10 @@ export default function Features() {
           {t.features.items.map((item, index) => {
             const Icon = featureIcons[index]
             return (
-              <Card key={item.title} className="group shadow-zinc-950/5">
+              <Card className="group shadow-zinc-950/5" key={item.title}>
                 <CardHeader className="pb-3">
                   <CardDecorator>
-                    <Icon className="size-6" aria-hidden />
+                    <Icon aria-hidden className="size-6" />
                   </CardDecorator>
                   <h3 className="mt-6 font-medium">{item.title}</h3>
                 </CardHeader>
