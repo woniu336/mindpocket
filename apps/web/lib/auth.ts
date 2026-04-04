@@ -9,6 +9,7 @@ import { deviceAuthorization } from "better-auth/plugins/device-authorization"
 import { count } from "drizzle-orm"
 import { db, schema } from "@/db/client"
 import { user as userTable } from "@/db/schema/auth"
+import { BETTER_AUTH_COOKIE_PREFIX } from "@/lib/auth-flow"
 
 const DEFAULT_APP_URL = "http://127.0.0.1:3000"
 const CLI_CLIENT_ID = "mindpocket-cli"
@@ -16,6 +17,10 @@ const CLI_CLIENT_ID = "mindpocket-cli"
 export const auth = betterAuth({
   appName: "MindPocket",
   baseURL: process.env.BETTER_AUTH_URL || process.env.NEXT_PUBLIC_APP_URL || DEFAULT_APP_URL,
+  advanced: {
+    // Keep the Better Auth cookie prefix explicit so route-level state checks stay in sync.
+    cookiePrefix: BETTER_AUTH_COOKIE_PREFIX,
+  },
   trustedOrigins: [
     process.env.NEXT_PUBLIC_APP_URL || DEFAULT_APP_URL,
     "chrome-extension://*",

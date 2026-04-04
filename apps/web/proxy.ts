@@ -5,7 +5,6 @@ const publicRoutes = [
   "/login",
   "/signup",
   "/device",
-  "/two-factor",
   "/api/auth",
   "/api/check-registration",
   "/api/health",
